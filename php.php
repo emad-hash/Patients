@@ -25,7 +25,7 @@ if(isset($_POST['delete_patient']))
 
 if(isset($_POST['update_patient']))
 {
-    $student_id = mysqli_real_escape_string($con, $_POST['patient_id']);
+    $patient_id = mysqli_real_escape_string($con, $_POST['patient_id']);
 
     $name = mysqli_real_escape_string($con, $_POST['Name']);
     $age = mysqli_real_escape_string($con, $_POST['Age']);
